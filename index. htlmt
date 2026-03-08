@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>LagoBeat B&B | Garda Active Experience</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+--primary:#003049;
+--secondary:#669bbc;
+--accent:#f77f00;
+--white:#ffffff;
+--bg:#f8f9fa;
+--text:#333533;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Inter',sans-serif;
+color:var(--text);
+line-height:1.6;
+background:var(--bg);
+}
+
+nav{
+position:fixed;
+width:100%;
+top:0;
+left:0;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:rgba(255,255,255,0.95);
+backdrop-filter:blur(8px);
+z-index:1000;
+}
+
+.logo{
+font-size:1.4rem;
+font-weight:700;
+color:var(--primary);
+}
+
+nav a{
+text-decoration:none;
+margin-left:25px;
+font-weight:600;
+color:var(--primary);
+}
+
+nav a:hover{
+color:var(--accent);
+}
+
+header{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)),
+url("Gemini_Generated_Image_mbqp5vmbqp5vmbqp (1).png") center/cover no-repeat;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero{
+max-width:800px;
+}
+
+.hero h1{
+font-size:4rem;
+margin-bottom:10px;
+text-shadow:0 5px 20px rgba(0,0,0,0.5);
+}
+
+.hero p{
+font-size:1.5rem;
+margin-bottom:35px;
+}
+
+.btn{
+background:var(--accent);
+padding:16px 36px;
+border-radius:40px;
+color:white;
+font-weight:700;
+text-decoration:none;
+transition:0.3s;
+display:inline-block;
+}
+
+.btn:hover{
+transform:scale(1.05);
+}
+
+section{
+padding:100px 10%;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:60px;
+}
+
+.section-title h2{
+font-size:2.6rem;
+color:var(--primary);
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+}
+
+.card{
+background:white;
+padding:40px 30px;
+border-radius:20px;
+box-shadow:0 15px 40px rgba(0,0,0,0.08);
+text-align:center;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card h3{
+margin-bottom:15px;
+color:var(--primary);
+}
+
+.about{
+background:white;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
+align-items:center;
+}
+
+.about img{
+width:100%;
+border-radius:20px;
+}
+
+.about h2{
+font-size:2.4rem;
+margin-bottom:20px;
+color:var(--primary);
+}
+
+footer{
+background:var(--primary);
+color:white;
+padding:60px 10%;
+text-align:center;
+}
+
+footer a{
+color:#fff;
+text-decoration:none;
+}
+
+@media(max-width:800px){
+
+.hero h1{
+font-size:2.8rem;
+}
+
+.hero p{
+font-size:1.2rem;
+}
+
+.about{
+grid-template-columns:1fr;
+}
+
+nav{
+padding:15px 6%;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">LagoBeat B&B</div>
+
+<div>
+<a href="#attivita">Attività</a>
+<a href="#bnb">Il B&B</a>
+<a href="#contatti">Contatti</a>
+</div>
+
+</nav>
+
+<header>
+
+<div class="hero">
+
+<h1>LagoBeat B&B</h1>
+
+<p>Vivi il Lago di Garda tra natura, sport e relax</p>
+
+<a class="btn" href="#bnb">Scopri di più</a>
+
+</div>
+
+</header>
+
+<section id="attivita">
+
+<div class="section-title">
+<h2>Esperienze sul Lago</h2>
+</div>
+
+<div class="grid">
+
+<div class="card">
+<h3🏄‍♂️>Surf & Wind</h3>
+<p>Il Garda è uno dei migliori spot europei per windsurf e kitesurf.</p>
+</div>
+
+<div class="card">
+<h3🚴>Bike & Trail</h3>
+<p>Esplora montagne e sentieri panoramici tra lago e natura.</p>
+</div>
+
+<div class="card">
+<h3🥾>Trekking</h3>
+<p>Escursioni incredibili con viste mozzafiato sul Lago di Garda.</p>
+</div>
+
+<div class="card">
+<h3🌅>Relax</h3>
+<p>Goditi tramonti, spiagge e la bellezza del lago.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="bnb" class="about">
+
+<img src="Gemini_Generated_Image_mbqp5vmbqp5vmbqp (1).png">
+
+<div>
+
+<h2>Il tuo B&B sul Garda</h2>
+
+<p>
+LagoBeat B&B è il punto di partenza perfetto per vivere il Lago di Garda.
+Un mix di relax, sport e natura in una location unica tra lago e montagne.
+</p>
+
+<br>
+
+<p>
+Perfetto per surfisti, ciclisti, escursionisti o per chi vuole semplicemente godersi il lago.
+</p>
+
+<br>
+
+<a class="btn" href="#contatti">Prenota ora</a>
+
+</div>
+
+</section>
+
+<footer id="contatti">
+
+<h2>LagoBeat B&B</h2>
+
+<p>@lagodigardabnb</p>
+
+<p>
+<a href="https://www.lagodigardabnb.com">www.lagodigardabnb.com</a>
+</p>
+
+<p style="margin-top:20px;">
+© 2025 LagoBeat B&B
+</p>
+
+</footer>
+
+</body>
+</html>
