@@ -1,296 +1,305 @@
 <!DOCTYPE html>
 <html lang="it">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>LagoBeat | Relax sul Lago</title>
+<title>LagoBeat B&B | Garda Active Experience</title>
 
-<meta name="description" content="LagoBeat casa vacanze sul lago. Relax, natura, escursioni e attività. Verifica disponibilità e contattaci.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
 
-body{
-margin:0;
-font-family:Arial, Helvetica, sans-serif;
-background:#f7f9fc;
-color:#333;
+:root{
+--primary:#003049;
+--secondary:#669bbc;
+--accent:#f77f00;
+--white:#ffffff;
+--bg:#f8f9fa;
+--text:#333533;
 }
 
-/* HERO */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
 
-.hero{
-height:85vh;
-background:url("hero.jpg") center/cover no-repeat;
+body{
+font-family:'Inter',sans-serif;
+color:var(--text);
+line-height:1.6;
+background:var(--bg);
+}
+
+nav{
+position:fixed;
+width:100%;
+top:0;
+left:0;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:rgba(255,255,255,0.95);
+backdrop-filter:blur(8px);
+z-index:1000;
+}
+
+.logo{
+font-size:1.4rem;
+font-weight:700;
+color:var(--primary);
+}
+
+nav a{
+text-decoration:none;
+margin-left:25px;
+font-weight:600;
+color:var(--primary);
+}
+
+nav a:hover{
+color:var(--accent);
+}
+
+header{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)),
+url("Gemini_Generated_Image_mbqp5vmbqp5vmbqp (1).png") center/cover no-repeat;
 display:flex;
 align-items:center;
 justify-content:center;
 text-align:center;
 color:white;
+padding:20px;
+}
+
+.hero{
+max-width:800px;
 }
 
 .hero h1{
-font-size:48px;
-background:rgba(0,0,0,0.45);
-padding:25px 40px;
-border-radius:10px;
+font-size:4rem;
+margin-bottom:10px;
+text-shadow:0 5px 20px rgba(0,0,0,0.5);
 }
 
-/* SEZIONI */
+.hero p{
+font-size:1.5rem;
+margin-bottom:35px;
+}
+
+.btn{
+background:var(--accent);
+padding:16px 36px;
+border-radius:40px;
+color:white;
+font-weight:700;
+text-decoration:none;
+transition:0.3s;
+display:inline-block;
+}
+
+.btn:hover{
+transform:scale(1.05);
+}
 
 section{
-padding:70px 20px;
-max-width:1100px;
-margin:auto;
+padding:100px 10%;
 }
 
-h2{
+.section-title{
 text-align:center;
-margin-bottom:40px;
+margin-bottom:60px;
 }
 
-/* ATTIVITA */
-
-.attivita{
-background:linear-gradient(135deg,#e9f6ff,#cfeaff,#b7e0ff);
-padding:50px;
-border-radius:15px;
-text-align:center;
-font-size:18px;
+.section-title h2{
+font-size:2.6rem;
+color:var(--primary);
 }
 
-/* GALLERY */
-
-.gallery{
+.grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
 }
 
-.gallery img{
-width:100%;
-border-radius:10px;
-}
-
-/* BOOKING */
-
-.booking{
+.card{
 background:white;
-padding:35px;
-border-radius:12px;
-box-shadow:0 10px 25px rgba(0,0,0,0.1);
-max-width:500px;
-margin:auto;
-}
-
-.booking input,
-.booking select{
-width:100%;
-padding:12px;
-margin-bottom:12px;
-border-radius:6px;
-border:1px solid #ccc;
-}
-
-.booking button{
-width:100%;
-padding:14px;
-background:#1da1f2;
-color:white;
-border:none;
-border-radius:8px;
-font-size:16px;
-cursor:pointer;
-}
-
-.price{
+padding:40px 30px;
+border-radius:20px;
+box-shadow:0 15px 40px rgba(0,0,0,0.08);
 text-align:center;
-font-weight:bold;
-font-size:20px;
-margin-bottom:10px;
+transition:0.3s;
 }
 
-/* MAP */
-
-.map iframe{
-border-radius:10px;
+.card:hover{
+transform:translateY(-8px);
 }
 
-/* WHATSAPP */
+.card h3{
+margin-bottom:15px;
+color:var(--primary);
+}
 
-.whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-width:60px;
-height:60px;
-background:#25D366;
-border-radius:50%;
-display:flex;
+.about{
+background:white;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
 align-items:center;
-justify-content:center;
-font-size:30px;
-color:white;
-text-decoration:none;
-box-shadow:0 5px 15px rgba(0,0,0,0.3);
 }
 
-/* FOOTER */
+.about img{
+width:100%;
+border-radius:20px;
+}
+
+.about h2{
+font-size:2.4rem;
+margin-bottom:20px;
+color:var(--primary);
+}
 
 footer{
-background:#0a2540;
+background:var(--primary);
 color:white;
+padding:60px 10%;
 text-align:center;
-padding:30px;
+}
+
+footer a{
+color:#fff;
+text-decoration:none;
+}
+
+@media(max-width:800px){
+
+.hero h1{
+font-size:2.8rem;
+}
+
+.hero p{
+font-size:1.2rem;
+}
+
+.about{
+grid-template-columns:1fr;
+}
+
+nav{
+padding:15px 6%;
+}
+
 }
 
 </style>
-
 </head>
 
 <body>
 
-<!-- HERO -->
+<nav>
+
+<div class="logo">LagoBeat B&B</div>
+
+<div>
+<a href="#attivita">Attività</a>
+<a href="#bnb">Il B&B</a>
+<a href="#contatti">Contatti</a>
+</div>
+
+</nav>
+
+<header>
 
 <div class="hero">
-<h1>LagoBeat Relax sul Lago</h1>
+
+<h1>LagoBeat B&B</h1>
+
+<p>Vivi il Lago di Garda tra natura, sport e relax</p>
+
+<a class="btn" href="#bnb">Scopri di più</a>
+
 </div>
 
-<!-- GALLERY -->
+</header>
 
-<section>
+<section id="attivita">
 
-<h2>La Struttura</h2>
+<div class="section-title">
+<h2>Esperienze sul Lago</h2>
+</div>
 
-<div class="gallery">
+<div class="grid">
 
-<img src="foto1.jpg">
-<img src="foto2.jpg">
-<img src="foto3.jpg">
+<div class="card">
+<h3🏄‍♂️>Surf & Wind</h3>
+<p>Il Garda è uno dei migliori spot europei per windsurf e kitesurf.</p>
+</div>
+
+<div class="card">
+<h3🚴>Bike & Trail</h3>
+<p>Esplora montagne e sentieri panoramici tra lago e natura.</p>
+</div>
+
+<div class="card">
+<h3🥾>Trekking</h3>
+<p>Escursioni incredibili con viste mozzafiato sul Lago di Garda.</p>
+</div>
+
+<div class="card">
+<h3🌅>Relax</h3>
+<p>Goditi tramonti, spiagge e la bellezza del lago.</p>
+</div>
 
 </div>
 
 </section>
 
-<!-- ATTIVITA -->
+<section id="bnb" class="about">
 
-<section class="attivita">
+<img src="Gemini_Generated_Image_mbqp5vmbqp5vmbqp (1).png">
 
-<h2>Attività</h2>
+<div>
+
+<h2>Il tuo B&B sul Garda</h2>
 
 <p>
-Kayak • Trekking • Mountain Bike • Escursioni • Relax sul Lago
+LagoBeat B&B è il punto di partenza perfetto per vivere il Lago di Garda.
+Un mix di relax, sport e natura in una location unica tra lago e montagne.
 </p>
 
-</section>
+<br>
 
-<!-- PRENOTAZIONE -->
+<p>
+Perfetto per surfisti, ciclisti, escursionisti o per chi vuole semplicemente godersi il lago.
+</p>
 
-<section>
+<br>
 
-<h2>Verifica disponibilità</h2>
-
-<div class="booking">
-
-<input type="date" id="arrivo">
-
-<input type="date" id="partenza">
-
-<select id="ospiti">
-<option>Numero ospiti</option>
-<option>1</option>
-<option>2</option>
-<option>3</option>
-<option>4</option>
-</select>
-
-<div class="price" id="prezzo">
-Prezzo stimato: —
-</div>
-
-<button onclick="prenota()">
-Richiedi disponibilità
-</button>
+<a class="btn" href="#contatti">Prenota ora</a>
 
 </div>
 
 </section>
 
-<!-- MAPPA -->
+<footer id="contatti">
 
-<section class="map">
+<h2>LagoBeat B&B</h2>
 
-<h2>Dove siamo</h2>
+<p>@lagodigardabnb</p>
 
-<iframe
-src="https://maps.google.com/maps?q=lago&t=&z=12&ie=UTF8&iwloc=&output=embed"
-width="100%"
-height="400"
-frameborder="0">
-</iframe>
+<p>
+<a href="https://www.lagodigardabnb.com">www.lagodigardabnb.com</a>
+</p>
 
-</section>
-
-<footer>
-
-<p>© LagoBeat Casa Vacanze</p>
+<p style="margin-top:20px;">
+© 2025 LagoBeat B&B
+</p>
 
 </footer>
 
-<a class="whatsapp" href="https://wa.me/393000000000">💬</a>
-
-<script>
-
-const prezzoNotte = 120;
-
-document.querySelectorAll("#arrivo,#partenza")
-.forEach(el => el.addEventListener("change",calcola));
-
-function calcola(){
-
-let arrivo = new Date(document.getElementById("arrivo").value);
-let partenza = new Date(document.getElementById("partenza").value);
-
-if(arrivo && partenza){
-
-let giorni = (partenza-arrivo)/(1000*60*60*24);
-
-if(giorni>0){
-
-let prezzo = giorni * prezzoNotte;
-
-document.getElementById("prezzo")
-.innerHTML = "Prezzo stimato: €"+prezzo;
-
-}
-
-}
-
-}
-
-function prenota(){
-
-let arrivo = document.getElementById("arrivo").value;
-let partenza = document.getElementById("partenza").value;
-let ospiti = document.getElementById("ospiti").value;
-
-let messaggio =
-`Richiesta disponibilità LagoBeat
-
-Arrivo: ${arrivo}
-Partenza: ${partenza}
-Ospiti: ${ospiti}`;
-
-let url = "https://wa.me/393000000000?text="+encodeURIComponent(messaggio);
-
-window.open(url,"_blank");
-
-}
-
-</script>
-
 </body>
-
 </html>
