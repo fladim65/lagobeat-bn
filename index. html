@@ -1,28 +1,29 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>LagoBeat | Casa Vacanze sul Lago</title>
+<title>LagoBeat | Relax sul Lago</title>
 
-<meta name="description" content="LagoBeat casa vacanze sul lago. Relax, natura, sport acquatici e trekking. Verifica disponibilità e richiedi informazioni.">
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+<meta name="description" content="LagoBeat casa vacanze sul lago. Relax, natura, escursioni e attività. Verifica disponibilità e contattaci.">
 
 <style>
 
 body{
 margin:0;
 font-family:Arial, Helvetica, sans-serif;
-background:#f6f9ff;
+background:#f7f9fc;
 color:#333;
 }
 
-header{
-height:80vh;
-background:url("https://images.unsplash.com/photo-1501785888041-af3ef285b470") center/cover no-repeat;
+/* HERO */
+
+.hero{
+height:85vh;
+background:url("hero.jpg") center/cover no-repeat;
 display:flex;
 align-items:center;
 justify-content:center;
@@ -30,12 +31,14 @@ text-align:center;
 color:white;
 }
 
-header h1{
-font-size:50px;
+.hero h1{
+font-size:48px;
 background:rgba(0,0,0,0.45);
 padding:25px 40px;
-border-radius:12px;
+border-radius:10px;
 }
+
+/* SEZIONI */
 
 section{
 padding:70px 20px;
@@ -48,7 +51,17 @@ text-align:center;
 margin-bottom:40px;
 }
 
-/* gallery */
+/* ATTIVITA */
+
+.attivita{
+background:linear-gradient(135deg,#e9f6ff,#cfeaff,#b7e0ff);
+padding:50px;
+border-radius:15px;
+text-align:center;
+font-size:18px;
+}
+
+/* GALLERY */
 
 .gallery{
 display:grid;
@@ -58,67 +71,62 @@ gap:20px;
 
 .gallery img{
 width:100%;
-border-radius:12px;
+border-radius:10px;
 }
 
-/* attività */
+/* BOOKING */
 
-.attivita{
-background:linear-gradient(135deg,#eaf6ff,#d6ecff,#c1e3ff);
-border-radius:20px;
-padding:40px;
-text-align:center;
-font-size:18px;
-}
-
-/* booking */
-
-.booking-box{
+.booking{
 background:white;
-padding:40px;
-border-radius:15px;
-box-shadow:0 10px 30px rgba(0,0,0,0.1);
-max-width:600px;
+padding:35px;
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+max-width:500px;
 margin:auto;
 }
 
-.booking-box input,
-.booking-box select{
+.booking input,
+.booking select{
 width:100%;
 padding:12px;
-margin:10px 0;
-border-radius:8px;
-border:1px solid #ddd;
-font-size:15px;
+margin-bottom:12px;
+border-radius:6px;
+border:1px solid #ccc;
 }
 
-.booking-box button{
+.booking button{
 width:100%;
+padding:14px;
 background:#1da1f2;
 color:white;
 border:none;
-padding:15px;
-font-size:16px;
 border-radius:8px;
+font-size:16px;
 cursor:pointer;
 }
 
 .price{
 text-align:center;
-font-size:22px;
-margin-top:15px;
 font-weight:bold;
+font-size:20px;
+margin-bottom:10px;
 }
 
-/* whatsapp */
+/* MAP */
+
+.map iframe{
+border-radius:10px;
+}
+
+/* WHATSAPP */
 
 .whatsapp{
 position:fixed;
-bottom:25px;
-right:25px;
-background:#25D366;
+bottom:20px;
+right:20px;
 width:60px;
 height:60px;
+background:#25D366;
 border-radius:50%;
 display:flex;
 align-items:center;
@@ -126,17 +134,16 @@ justify-content:center;
 font-size:30px;
 color:white;
 text-decoration:none;
-box-shadow:0 6px 20px rgba(0,0,0,0.3);
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
 }
 
-/* footer */
+/* FOOTER */
 
 footer{
 background:#0a2540;
 color:white;
 text-align:center;
-padding:40px;
-margin-top:50px;
+padding:30px;
 }
 
 </style>
@@ -145,9 +152,13 @@ margin-top:50px;
 
 <body>
 
-<header>
+<!-- HERO -->
+
+<div class="hero">
 <h1>LagoBeat Relax sul Lago</h1>
-</header>
+</div>
+
+<!-- GALLERY -->
 
 <section>
 
@@ -155,15 +166,15 @@ margin-top:50px;
 
 <div class="gallery">
 
-<img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb">
-
-<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
-
-<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+<img src="foto1.jpg">
+<img src="foto2.jpg">
+<img src="foto3.jpg">
 
 </div>
 
 </section>
+
+<!-- ATTIVITA -->
 
 <section class="attivita">
 
@@ -175,15 +186,17 @@ Kayak • Trekking • Mountain Bike • Escursioni • Relax sul Lago
 
 </section>
 
+<!-- PRENOTAZIONE -->
+
 <section>
 
 <h2>Verifica disponibilità</h2>
 
-<div class="booking-box">
+<div class="booking">
 
-<input id="arrivo" placeholder="Data arrivo">
+<input type="date" id="arrivo">
 
-<input id="partenza" placeholder="Data partenza">
+<input type="date" id="partenza">
 
 <select id="ospiti">
 <option>Numero ospiti</option>
@@ -191,11 +204,10 @@ Kayak • Trekking • Mountain Bike • Escursioni • Relax sul Lago
 <option>2</option>
 <option>3</option>
 <option>4</option>
-<option>5+</option>
 </select>
 
 <div class="price" id="prezzo">
-Prezzo totale: —
+Prezzo stimato: —
 </div>
 
 <button onclick="prenota()">
@@ -206,15 +218,17 @@ Richiedi disponibilità
 
 </section>
 
-<section>
+<!-- MAPPA -->
+
+<section class="map">
 
 <h2>Dove siamo</h2>
 
 <iframe
-src="https://maps.google.com/maps?q=lago%20di%20garda&t=&z=11&ie=UTF8&iwloc=&output=embed"
+src="https://maps.google.com/maps?q=lago&t=&z=12&ie=UTF8&iwloc=&output=embed"
 width="100%"
 height="400"
-style="border:0;border-radius:12px">
+frameborder="0">
 </iframe>
 
 </section>
@@ -227,12 +241,7 @@ style="border:0;border-radius:12px">
 
 <a class="whatsapp" href="https://wa.me/393000000000">💬</a>
 
-<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-
 <script>
-
-flatpickr("#arrivo",{dateFormat:"Y-m-d"});
-flatpickr("#partenza",{dateFormat:"Y-m-d"});
 
 const prezzoNotte = 120;
 
@@ -253,7 +262,7 @@ if(giorni>0){
 let prezzo = giorni * prezzoNotte;
 
 document.getElementById("prezzo")
-.innerHTML = "Prezzo totale: €"+prezzo;
+.innerHTML = "Prezzo stimato: €"+prezzo;
 
 }
 
@@ -274,8 +283,7 @@ Arrivo: ${arrivo}
 Partenza: ${partenza}
 Ospiti: ${ospiti}`;
 
-let url =
-"https://wa.me/393000000000?text="+encodeURIComponent(messaggio);
+let url = "https://wa.me/393000000000?text="+encodeURIComponent(messaggio);
 
 window.open(url,"_blank");
 
