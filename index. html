@@ -1,41 +1,40 @@
 <!DOCTYPE html>
 <html lang="it">
-
 <head>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>LagoBeat | Relax sul Lago</title>
+<title>LagoBeat | Casa Vacanze sul Lago</title>
 
-<meta name="description" content="Casa vacanza LagoBeat. Relax sul lago, natura, sport e attività. Verifica disponibilità e prenota ora.">
+<meta name="description" content="LagoBeat casa vacanze sul lago. Relax, natura, sport acquatici e trekking. Verifica disponibilità e richiedi informazioni.">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 
 <style>
 
 body{
-font-family:Arial;
 margin:0;
-background:#f9fbff;
+font-family:Arial, Helvetica, sans-serif;
+background:#f6f9ff;
 color:#333;
 }
 
 header{
-height:70vh;
-background:url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e") center/cover;
+height:80vh;
+background:url("https://images.unsplash.com/photo-1501785888041-af3ef285b470") center/cover no-repeat;
 display:flex;
 align-items:center;
 justify-content:center;
-color:white;
 text-align:center;
+color:white;
 }
 
 header h1{
-font-size:48px;
-background:rgba(0,0,0,0.4);
-padding:20px;
-border-radius:10px;
+font-size:50px;
+background:rgba(0,0,0,0.45);
+padding:25px 40px;
+border-radius:12px;
 }
 
 section{
@@ -49,69 +48,6 @@ text-align:center;
 margin-bottom:40px;
 }
 
-/* attività */
-
-.attivita{
-background:linear-gradient(135deg,#eaf6ff,#d6ecff,#c1e3ff);
-border-radius:20px;
-padding:40px;
-}
-
-/* booking */
-
-.booking{
-background:white;
-padding:40px;
-border-radius:15px;
-box-shadow:0 10px 30px rgba(0,0,0,0.1);
-}
-
-.booking input,
-.booking select{
-width:100%;
-padding:12px;
-margin:10px 0;
-border-radius:8px;
-border:1px solid #ddd;
-}
-
-.booking button{
-background:#1da1f2;
-color:white;
-padding:14px;
-border:none;
-border-radius:8px;
-font-size:16px;
-cursor:pointer;
-width:100%;
-}
-
-.price{
-font-size:22px;
-font-weight:bold;
-text-align:center;
-margin-top:10px;
-}
-
-/* whatsapp */
-
-.whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-color:white;
-font-size:28px;
-width:60px;
-height:60px;
-border-radius:50%;
-display:flex;
-align-items:center;
-justify-content:center;
-text-decoration:none;
-box-shadow:0 5px 20px rgba(0,0,0,0.2);
-}
-
 /* gallery */
 
 .gallery{
@@ -122,14 +58,85 @@ gap:20px;
 
 .gallery img{
 width:100%;
-border-radius:10px;
+border-radius:12px;
 }
+
+/* attività */
+
+.attivita{
+background:linear-gradient(135deg,#eaf6ff,#d6ecff,#c1e3ff);
+border-radius:20px;
+padding:40px;
+text-align:center;
+font-size:18px;
+}
+
+/* booking */
+
+.booking-box{
+background:white;
+padding:40px;
+border-radius:15px;
+box-shadow:0 10px 30px rgba(0,0,0,0.1);
+max-width:600px;
+margin:auto;
+}
+
+.booking-box input,
+.booking-box select{
+width:100%;
+padding:12px;
+margin:10px 0;
+border-radius:8px;
+border:1px solid #ddd;
+font-size:15px;
+}
+
+.booking-box button{
+width:100%;
+background:#1da1f2;
+color:white;
+border:none;
+padding:15px;
+font-size:16px;
+border-radius:8px;
+cursor:pointer;
+}
+
+.price{
+text-align:center;
+font-size:22px;
+margin-top:15px;
+font-weight:bold;
+}
+
+/* whatsapp */
+
+.whatsapp{
+position:fixed;
+bottom:25px;
+right:25px;
+background:#25D366;
+width:60px;
+height:60px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:30px;
+color:white;
+text-decoration:none;
+box-shadow:0 6px 20px rgba(0,0,0,0.3);
+}
+
+/* footer */
 
 footer{
 background:#0a2540;
 color:white;
 text-align:center;
-padding:30px;
+padding:40px;
+margin-top:50px;
 }
 
 </style>
@@ -148,9 +155,11 @@ padding:30px;
 
 <div class="gallery">
 
-<img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470">
-<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
 <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb">
+
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
 
 </div>
 
@@ -160,10 +169,8 @@ padding:30px;
 
 <h2>Attività</h2>
 
-<p style="text-align:center">
-
-Kayak • Trekking • Mountain Bike • Relax sul lago • Escursioni
-
+<p>
+Kayak • Trekking • Mountain Bike • Escursioni • Relax sul Lago
 </p>
 
 </section>
@@ -172,20 +179,19 @@ Kayak • Trekking • Mountain Bike • Relax sul lago • Escursioni
 
 <h2>Verifica disponibilità</h2>
 
-<div class="booking">
+<div class="booking-box">
 
 <input id="arrivo" placeholder="Data arrivo">
 
 <input id="partenza" placeholder="Data partenza">
 
 <select id="ospiti">
-
-<option>Ospiti</option>
+<option>Numero ospiti</option>
 <option>1</option>
 <option>2</option>
 <option>3</option>
 <option>4</option>
-
+<option>5+</option>
 </select>
 
 <div class="price" id="prezzo">
@@ -205,17 +211,17 @@ Richiedi disponibilità
 <h2>Dove siamo</h2>
 
 <iframe
-src="https://maps.google.com/maps?q=lago%20di%20como&t=&z=11&ie=UTF8&iwloc=&output=embed"
+src="https://maps.google.com/maps?q=lago%20di%20garda&t=&z=11&ie=UTF8&iwloc=&output=embed"
 width="100%"
 height="400"
-style="border:0;border-radius:10px">
+style="border:0;border-radius:12px">
 </iframe>
 
 </section>
 
 <footer>
 
-© LagoBeat 2026
+<p>© LagoBeat Casa Vacanze</p>
 
 </footer>
 
@@ -235,12 +241,12 @@ document.querySelectorAll("#arrivo,#partenza")
 
 function calcola(){
 
-let a = new Date(document.getElementById("arrivo").value);
-let p = new Date(document.getElementById("partenza").value);
+let arrivo = new Date(document.getElementById("arrivo").value);
+let partenza = new Date(document.getElementById("partenza").value);
 
-if(a && p){
+if(arrivo && partenza){
 
-let giorni = (p-a)/(1000*60*60*24);
+let giorni = (partenza-arrivo)/(1000*60*60*24);
 
 if(giorni>0){
 
@@ -268,7 +274,8 @@ Arrivo: ${arrivo}
 Partenza: ${partenza}
 Ospiti: ${ospiti}`;
 
-let url = "https://wa.me/393000000000?text="+encodeURIComponent(messaggio);
+let url =
+"https://wa.me/393000000000?text="+encodeURIComponent(messaggio);
 
 window.open(url,"_blank");
 
